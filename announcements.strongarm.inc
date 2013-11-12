@@ -21,6 +21,18 @@ function announcements_strongarm() {
         'title' => array(
           'weight' => '0',
         ),
+        'metatags' => array(
+          'weight' => '9',
+        ),
+        'path' => array(
+          'weight' => '7',
+        ),
+        'redirect' => array(
+          'weight' => '6',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '8',
+        ),
       ),
       'display' => array(),
     ),

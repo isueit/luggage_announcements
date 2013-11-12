@@ -22,7 +22,6 @@ function announcements_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Announcements';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -74,8 +73,10 @@ function announcements_views_default_views() {
   $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
+  /* Display: Listing */
+  $handler = $view->new_display('page', 'Listing', 'page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Announcements';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -103,8 +104,8 @@ function announcements_views_default_views() {
   );
   $handler->display->display_options['path'] = 'announcements';
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
+  /* Display: FlexSlider */
+  $handler = $view->new_display('block', 'FlexSlider', 'block');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
@@ -142,44 +143,8 @@ function announcements_views_default_views() {
   $handler->display->display_options['fields']['field_announcement_caption']['label'] = '';
   $handler->display->display_options['fields']['field_announcement_caption']['element_label_colon'] = FALSE;
 
-  /* Display: Block2 */
-  $handler = $view->new_display('block', 'Block2', 'block_1');
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'flexslider';
-  $handler->display->display_options['style_options']['optionset'] = 'announcement_test';
-  $handler->display->display_options['style_options']['captionfield'] = 'field_announcement_body';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Image */
-  $handler->display->display_options['fields']['field_announcement_image']['id'] = 'field_announcement_image';
-  $handler->display->display_options['fields']['field_announcement_image']['table'] = 'field_data_field_announcement_image';
-  $handler->display->display_options['fields']['field_announcement_image']['field'] = 'field_announcement_image';
-  $handler->display->display_options['fields']['field_announcement_image']['label'] = '';
-  $handler->display->display_options['fields']['field_announcement_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_announcement_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_announcement_image']['settings'] = array(
-    'image_style' => '',
-    'image_link' => 'content',
-  );
-  /* Field: Content: Caption */
-  $handler->display->display_options['fields']['field_announcement_caption']['id'] = 'field_announcement_caption';
-  $handler->display->display_options['fields']['field_announcement_caption']['table'] = 'field_data_field_announcement_caption';
-  $handler->display->display_options['fields']['field_announcement_caption']['field'] = 'field_announcement_caption';
-  $handler->display->display_options['fields']['field_announcement_caption']['label'] = '';
-  $handler->display->display_options['fields']['field_announcement_caption']['element_label_colon'] = FALSE;
+  /* Display: Simple */
+  $handler = $view->new_display('block', 'Simple', 'block_1');
   $export['announcements'] = $view;
 
   return $export;
