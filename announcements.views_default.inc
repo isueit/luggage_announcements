@@ -119,6 +119,12 @@ function announcements_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['path'] = 'announcements';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Announcements';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
 
   /* Display: Announcement Slider */
   $handler = $view->new_display('block', 'Announcement Slider', 'block_1');
