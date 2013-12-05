@@ -164,25 +164,7 @@ function announcements_field_default_field_instances() {
     'label' => 'Caption',
     'required' => 1,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'plain_text' => 'plain_text',
-          'wysiwyg' => 'wysiwyg',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'wysiwyg' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -262,56 +244,12 @@ function announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_tags'
-  $field_instances['node-announcement-field_tags'] = array(
-    'bundle' => 'announcement',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Add Tags to help users find related content. Enter Tags as a comma delimited string.
-Baseball, bat, glove, ...',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_tags',
-    'label' => 'Tags',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'taxonomy',
-      'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
-        'size' => 60,
-      ),
-      'type' => 'taxonomy_autocomplete',
-      'weight' => 1,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
-  t('Add Tags to help users find related content. Enter Tags as a comma delimited string.
-Baseball, bat, glove, ...');
   t('Banner Image');
   t('Body');
   t('Body Image(s)');
   t('Caption');
-  t('Tags');
 
   return $field_instances;
 }
