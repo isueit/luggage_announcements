@@ -127,7 +127,7 @@ function announcements_views_default_views() {
   $handler->display->display_options['menu']['context_only_inline'] = 0;
 
   /* Display: Announcement Slider */
-  $handler = $view->new_display('block', 'Announcement Slider', 'block_1');
+  $handler = $view->new_display('block', 'Announcement Slider', 'announcement_slider');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -166,6 +166,7 @@ function announcements_views_default_views() {
     'image_style' => 'announcement_slider',
     'image_link' => 'content',
   );
+  $handler->display->display_options['block_description'] = 'announcement_slider';
   $export['announcements'] = $view;
 
   return $export;

@@ -108,7 +108,7 @@
 }
 
 @media (max-width: 979px) {
-  .view-id-announcements.view-display-id-block_1 {
+  .view-id-announcements.view-display-id-announcement_slider {
     display: none;
   }
 }
