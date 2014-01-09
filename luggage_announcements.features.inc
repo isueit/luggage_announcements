@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * announcements.features.inc
+ * luggage_announcements.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function announcements_ctools_plugin_api($module = NULL, $api = NULL) {
+function luggage_announcements_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "flexslider" && $api == "flexslider_default_preset") {
     return array("version" => "1");
   }
@@ -19,14 +19,14 @@ function announcements_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_views_api().
  */
-function announcements_views_api($module = NULL, $api = NULL) {
+function luggage_announcements_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
 /**
  * Implements hook_image_default_styles().
  */
-function announcements_image_default_styles() {
+function luggage_announcements_image_default_styles() {
   $styles = array();
 
   // Exported image style: announcement_slider.
@@ -98,7 +98,7 @@ function announcements_image_default_styles() {
 /**
  * Implements hook_node_info().
  */
-function announcements_node_info() {
+function luggage_announcements_node_info() {
   $items = array(
     'announcement' => array(
       'name' => t('Announcement'),

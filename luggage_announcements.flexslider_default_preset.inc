@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * announcements.flexslider_default_preset.inc
+ * luggage_announcements.flexslider_default_preset.inc
  */
 
 /**
  * Implements hook_flexslider_default_presets().
  */
-function announcements_flexslider_default_presets() {
+function luggage_announcements_flexslider_default_presets() {
   $export = array();
 
   $preset = new stdClass();

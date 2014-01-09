@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * announcements.features.field_instance.inc
+ * luggage_announcements.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function announcements_field_default_field_instances() {
+function luggage_announcements_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-announcement-field_announcement_body'

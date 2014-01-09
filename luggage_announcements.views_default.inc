@@ -1,17 +1,17 @@
 <?php
 /**
  * @file
- * announcements.views_default.inc
+ * luggage_announcements.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function announcements_views_default_views() {
+function luggage_announcements_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'announcements';
+  $view->name = 'luggage_announcements';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
@@ -167,7 +167,7 @@ function announcements_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['block_description'] = 'announcement_slider';
-  $export['announcements'] = $view;
+  $export['luggage_announcements'] = $view;
 
   return $export;
 }

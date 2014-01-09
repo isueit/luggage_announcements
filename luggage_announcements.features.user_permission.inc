@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * announcements.features.user_permission.inc
+ * luggage_announcements.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function announcements_user_default_permissions() {
+function luggage_announcements_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'create announcement content'.
