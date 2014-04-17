@@ -341,38 +341,38 @@ function luggage_announcements_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'taxonomy_to_apachesolr_link',
+        'module' => 'taxonomy',
         'settings' => array(
           'path' => array(
             'search_path' => 'http://preview.ent.iastate.edu/search/content',
           ),
           'target' => '_self',
         ),
-        'type' => 'taxonomy_to_apachesolr_link',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 1,
       ),
       'full' => array(
         'label' => 'inline',
-        'module' => 'taxonomy_to_apachesolr_link',
+        'module' => 'taxonomy',
         'settings' => array(
           'path' => array(
             'search_path' => 'http://preview.ent.iastate.edu/search/content',
           ),
           'target' => '_self',
         ),
-        'type' => 'taxonomy_to_apachesolr_link',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 1,
       ),
       'search_index' => array(
         'label' => 'inline',
-        'module' => 'taxonomy_to_apachesolr_link',
+        'module' => 'taxonomy',
         'settings' => array(
           'path' => array(
             'search_path' => 'http://preview.ent.iastate.edu/search/content',
           ),
           'target' => '_self',
         ),
-        'type' => 'taxonomy_to_apachesolr_link',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 2,
       ),
       'search_result' => array(
@@ -414,38 +414,38 @@ Baseball, bat, glove, ...',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'taxonomy_to_apachesolr_link',
+        'module' => 'taxonomy',
         'settings' => array(
           'path' => array(
             'search_path' => 'http://preview.ent.iastate.edu/search/content',
           ),
           'target' => '_self',
         ),
-        'type' => 'taxonomy_to_apachesolr_link',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 5,
       ),
       'full' => array(
         'label' => 'inline',
-        'module' => 'taxonomy_to_apachesolr_link',
+        'module' => 'taxonomy',
         'settings' => array(
           'path' => array(
             'search_path' => 'http://preview.ent.iastate.edu/search/content',
           ),
           'target' => '_self',
         ),
-        'type' => 'taxonomy_to_apachesolr_link',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 2,
       ),
       'search_index' => array(
         'label' => 'inline',
-        'module' => 'taxonomy_to_apachesolr_link',
+        'module' => 'taxonomy',
         'settings' => array(
           'path' => array(
             'search_path' => 'http://preview.ent.iastate.edu/search/content',
           ),
           'target' => '_self',
         ),
-        'type' => 'taxonomy_to_apachesolr_link',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 3,
       ),
       'search_result' => array(
