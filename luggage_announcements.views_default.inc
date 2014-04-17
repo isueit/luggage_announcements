@@ -31,12 +31,13 @@ function luggage_announcements_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '35';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['inline'] = array(
-    'field_announcement_background_im' => 'field_announcement_background_im',
-    'title' => 'title',
-    'field_announcement_body' => 'field_announcement_body',
-  );
+  $handler->display->display_options['row_plugin'] = 'ds';
+  $handler->display->display_options['row_options']['view_mode'] = 'search_result';
+  $handler->display->display_options['row_options']['grouping'] = 0;
+  $handler->display->display_options['row_options']['advanced'] = 0;
+  $handler->display->display_options['row_options']['delta_fieldset']['delta_fields'] = array();
+  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
+  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'search_result';
   /* Field: Content: Banner Image */
   $handler->display->display_options['fields']['field_announcement_image']['id'] = 'field_announcement_image';
   $handler->display->display_options['fields']['field_announcement_image']['table'] = 'field_data_field_announcement_image';
@@ -130,7 +131,7 @@ function luggage_announcements_views_default_views() {
   $handler = $view->new_display('block', 'Announcement Slider', 'announcement_slider');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'flexslider';
