@@ -16,10 +16,14 @@ function luggage_announcements_solr_features_override_default_overrides() {
   $overrides["field_instance.node-announcement-field_category.display|default|type"] = 'taxonomy_to_apachesolr_link';
   $overrides["field_instance.node-announcement-field_category.display|search_index|module"] = 'taxonomy_to_apachesolr_link';
   $overrides["field_instance.node-announcement-field_category.display|search_index|type"] = 'taxonomy_to_apachesolr_link';
+  $overrides["field_instance.node-announcement-field_category.display|full|module"] = 'taxonomy_to_apachesolr_link';
+  $overrides["field_instance.node-announcement-field_category.display|full|type"] = 'taxonomy_to_apachesolr_link';
   $overrides["field_instance.node-announcement-field_tags.display|default|module"] = 'taxonomy_to_apachesolr_link';
   $overrides["field_instance.node-announcement-field_tags.display|default|type"] = 'taxonomy_to_apachesolr_link';
   $overrides["field_instance.node-announcement-field_tags.display|search_index|module"] = 'taxonomy_to_apachesolr_link';
   $overrides["field_instance.node-announcement-field_tags.display|search_index|type"] = 'taxonomy_to_apachesolr_link';
+  $overrides["field_instance.node-announcement-field_tags.display|full|module"] = 'taxonomy_to_apachesolr_link';
+  $overrides["field_instance.node-announcement-field_tags.display|full|type"] = 'taxonomy_to_apachesolr_link';
 
  return $overrides;
 }
