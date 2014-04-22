@@ -36,7 +36,7 @@ function luggage_announcements_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 0,
       ),
       'search_result' => array(
         'label' => 'hidden',
@@ -92,7 +92,7 @@ function luggage_announcements_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -116,20 +116,19 @@ function luggage_announcements_field_default_field_instances() {
       ),
       'search_index' => array(
         'label' => 'inline',
-        'module' => 'flexslider_fields',
+        'module' => 'image',
         'settings' => array(
-          'caption' => FALSE,
+          'image_link' => '',
           'image_style' => '',
-          'optionset' => 'default',
         ),
-        'type' => 'flexslider',
-        'weight' => 5,
+        'type' => 'image',
+        'weight' => 1,
       ),
       'search_result' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -181,7 +180,7 @@ function luggage_announcements_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -193,7 +192,7 @@ function luggage_announcements_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 2,
@@ -209,13 +208,13 @@ function luggage_announcements_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 5,
       ),
       'search_result' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -239,7 +238,7 @@ function luggage_announcements_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -263,20 +262,19 @@ function luggage_announcements_field_default_field_instances() {
       ),
       'search_index' => array(
         'label' => 'inline',
-        'module' => 'flexslider_fields',
+        'module' => 'image',
         'settings' => array(
-          'caption' => FALSE,
+          'image_link' => '',
           'image_style' => '',
-          'optionset' => 'default',
         ),
-        'type' => 'flexslider',
-        'weight' => 0,
+        'type' => 'image',
+        'weight' => 4,
       ),
       'search_result' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -328,7 +326,7 @@ function luggage_announcements_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -342,12 +340,7 @@ function luggage_announcements_field_default_field_instances() {
       'default' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 1,
       ),
@@ -366,26 +359,23 @@ function luggage_announcements_field_default_field_instances() {
       'search_index' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 2,
       ),
       'search_result' => array(
         'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 1,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -413,14 +403,9 @@ function luggage_announcements_field_default_field_instances() {
 Baseball, bat, glove, ...',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 5,
       ),
@@ -439,26 +424,23 @@ Baseball, bat, glove, ...',
       'search_index' => array(
         'label' => 'inline',
         'module' => 'taxonomy',
-        'settings' => array(
-          'path' => array(
-            'search_path' => 'http://preview.ent.iastate.edu/search/content',
-          ),
-          'target' => '_self',
-        ),
+        'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
         'weight' => 3,
       ),
       'search_result' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -476,7 +458,7 @@ Baseball, bat, glove, ...',
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
