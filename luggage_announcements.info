@@ -4,6 +4,7 @@ core = 7.x
 package = Luggage
 version = 7.x-2.14
 project = luggage_announcements
+dependencies[] = flexslider
 dependencies[] = flexslider_fields
 dependencies[] = flexslider_views
 dependencies[] = luggage_roles
