@@ -16,7 +16,7 @@ function luggage_announcements_flexslider_default_presets() {
   $preset->name = 'announcemant_slider';
   $preset->title = 'announcemant slider';
   $preset->theme = 'classic';
-  $preset->imagestyle_normal = 'announcement_slider';
+  $preset->imagestyle_normal = 'announcement_full';
   $preset->imagestyle_thumbnail = 'flexslider_thumbnail';
   $preset->options = array(
     'namespace' => 'flex-',

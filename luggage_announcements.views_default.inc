@@ -164,7 +164,7 @@ function luggage_announcements_views_default_views() {
   $handler->display->display_options['fields']['field_announcement_image']['element_wrapper_class'] = 'announcement-img';
   $handler->display->display_options['fields']['field_announcement_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_announcement_image']['settings'] = array(
-    'image_style' => 'announcement_slider',
+    'image_style' => 'announcement_full',
     'image_link' => 'content',
   );
   $handler->display->display_options['block_description'] = 'announcement_slider';
