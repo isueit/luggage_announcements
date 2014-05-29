@@ -131,7 +131,7 @@ function luggage_announcements_views_default_views() {
   $handler = $view->new_display('block', 'Announcement Slider', 'announcement_slider');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'flexslider';
@@ -147,6 +147,13 @@ function luggage_announcements_views_default_views() {
   );
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Alternate Url */
+  $handler->display->display_options['fields']['field_announcement_alternate_url']['id'] = 'field_announcement_alternate_url';
+  $handler->display->display_options['fields']['field_announcement_alternate_url']['table'] = 'field_data_field_announcement_alternate_url';
+  $handler->display->display_options['fields']['field_announcement_alternate_url']['field'] = 'field_announcement_alternate_url';
+  $handler->display->display_options['fields']['field_announcement_alternate_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_announcement_alternate_url']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_announcement_alternate_url']['type'] = 'link_url';
   /* Field: Content: Caption */
   $handler->display->display_options['fields']['field_announcement_caption']['id'] = 'field_announcement_caption';
   $handler->display->display_options['fields']['field_announcement_caption']['table'] = 'field_data_field_announcement_caption';
@@ -159,13 +166,15 @@ function luggage_announcements_views_default_views() {
   $handler->display->display_options['fields']['field_announcement_image']['table'] = 'field_data_field_announcement_image';
   $handler->display->display_options['fields']['field_announcement_image']['field'] = 'field_announcement_image';
   $handler->display->display_options['fields']['field_announcement_image']['label'] = '';
+  $handler->display->display_options['fields']['field_announcement_image']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_announcement_image']['alter']['path'] = '[field_announcement_alternate_url] ';
   $handler->display->display_options['fields']['field_announcement_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_announcement_image']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['field_announcement_image']['element_wrapper_class'] = 'announcement-img';
   $handler->display->display_options['fields']['field_announcement_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_announcement_image']['settings'] = array(
     'image_style' => 'announcement_full',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   $handler->display->display_options['block_description'] = 'announcement_slider';
   $export['luggage_announcements'] = $view;
