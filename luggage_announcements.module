@@ -25,6 +25,32 @@ function luggage_announcements_views_pre_render(&$view) {
     //drupal_add_js($contextual_module_path . '/contextual.js');
     drupal_add_css($luggage_announcements_module_path . '/css/luggage_announcements.css');
   }
+
+  if($view->name == 'luggage_announcements') {
+    foreach($view->result as $key=>$announcement) {
+      if(!isset($view->result[$key]->field_field_announcement_alternate_url[0])) {
+        $url = drupal_get_path_alias('node/' . $announcement->nid);
+        $temp = array(
+          'rendered'=>array(
+            '#theme'=>'link_formatter_link_url',
+            '#element'=>array(
+              'url'=>$url,
+              'title'=>$url,
+              'display_url'=>$url
+            ),
+            '#display'=>array(
+              'type'=>'link_url',
+              'label'=>'hidden',
+              'module'=>'link',
+              'weight'=>0,
+              'settings'=>array()
+            )
+          )
+        );
+        array_push($announcement->field_field_announcement_alternate_url, $temp);
+      }
+    }
+  }
 }
 
 
