@@ -15,7 +15,7 @@ function luggage_announcements_field_default_field_instances() {
     'bundle' => 'announcement',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'An alternate url should be included when an announcement is made about, for example, a news item. (e.g. http://www.news.iastate.edu/item or [site:url]news/item)',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -82,7 +82,7 @@ function luggage_announcements_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 11,
+      'weight' => 1,
     ),
   );
 
@@ -168,7 +168,7 @@ function luggage_announcements_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -256,7 +256,7 @@ function luggage_announcements_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -314,7 +314,7 @@ function luggage_announcements_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -403,7 +403,7 @@ function luggage_announcements_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -462,7 +462,7 @@ function luggage_announcements_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -525,7 +525,7 @@ Baseball, bat, glove, ...',
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -534,6 +534,7 @@ Baseball, bat, glove, ...',
   t('Add Tags to help users find related content. Enter Tags as a comma delimited string.
 Baseball, bat, glove, ...');
   t('Alternate Url');
+  t('An alternate url should be included when an announcement is made about, for example, a news item. (e.g. http://www.news.iastate.edu/item or [site:url]news/item)');
   t('Banner Image');
   t('Body');
   t('Body Image(s)');
