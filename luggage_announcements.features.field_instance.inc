@@ -251,7 +251,7 @@ function luggage_announcements_field_default_field_instances() {
           'image_thumbnail' => 0,
           'link' => 0,
         ),
-        'insert_width' => '',
+        'insert_width' => 300,
         'preview_image_style' => 'medium',
         'progress_indicator' => 'throbber',
       ),
