@@ -14,6 +14,7 @@ function luggage_announcements_user_default_permissions() {
   $permissions['create announcement content'] = array(
     'name' => 'create announcement content',
     'roles' => array(
+      'authenticated user' => 'authenticated user',
       'content editor' => 'content editor',
       'content publisher' => 'content publisher',
     ),
@@ -24,7 +25,6 @@ function luggage_announcements_user_default_permissions() {
   $permissions['delete any announcement content'] = array(
     'name' => 'delete any announcement content',
     'roles' => array(
-      'content editor' => 'content editor',
       'content publisher' => 'content publisher',
     ),
     'module' => 'node',
@@ -33,7 +33,9 @@ function luggage_announcements_user_default_permissions() {
   // Exported permission: 'delete own announcement content'.
   $permissions['delete own announcement content'] = array(
     'name' => 'delete own announcement content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
@@ -50,7 +52,9 @@ function luggage_announcements_user_default_permissions() {
   // Exported permission: 'edit own announcement content'.
   $permissions['edit own announcement content'] = array(
     'name' => 'edit own announcement content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
