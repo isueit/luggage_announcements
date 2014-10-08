@@ -58,4 +58,4 @@ features[variable][] = scheduler_publish_past_date_announcement
 features[variable][] = scheduler_unpublish_enable_announcement
 features[variable][] = scheduler_use_vertical_tabs_announcement
 features[views_view][] = luggage_announcements
-features_exclude[menu_custom][main-menu] = main-menu
+github = https://raw.github.com/isubit/luggage_announcements/master/luggage_announcements.info
