@@ -10,3 +10,34 @@ db_update('system')
 ->condition('name', 'luggage_announcements')
 ->execute();
 }
+
+/**
+ * Implements hook_requirements()
+ */
+function luggage_announcements_requirements($phase) {
+  $requirements = array();
+
+  if($phase == 'runtime') {
+    $info = features_get_modules('luggage_announcements');
+    if(isset($info->info['github'])) {
+      $github = $info->info['github'];
+      $ch = curl_init();
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+      curl_setopt($ch, CURLOPT_URL, $github);
+      curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+      $current_info = curl_exec($ch);
+      $startsat = strpos($current_info, "{7.x-}") + strlen("{7.x-}");
+      $endsat = strpos($current_info, "{\n}", $startsat);
+      $result = substr($current_info, $startsat, $endsat - $startsat);
+      curl_close($ch);
+      $requirements['luggage_announcements'] = array(
+        'title' => 'Luggage Announcements',
+        'value' => $info->info['version'],
+        'description' => 'Luggage announcements description',
+        'severity' => REQUIREMENT_ERROR,
+      );
+    }
+  }
+
+  return $requirements;
+}
