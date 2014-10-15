@@ -33,7 +33,7 @@ function luggage_announcements_flexslider_default_presets() {
     'video' => 0,
     'keyboard' => 1,
     'multipleKeyboard' => 0,
-    'mousewheel' => 1,
+    'mousewheel' => 0,
     'controlsContainer' => '.flex-control-nav-container',
     'sync' => '',
     'asNavFor' => '',
