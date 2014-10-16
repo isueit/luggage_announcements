@@ -11,40 +11,40 @@ db_update('system')
 ->execute();
 }
 
-/**
- * Implements hook_requirements()
- */
-function luggage_announcements_requirements($phase) {
-  $requirements = array();
-
-  if($phase == 'runtime') {
-    $info = features_get_modules('luggage_announcements');
-    if(isset($info->info['github'])) {
-      $github = $info->info['github'];
-      $ch = curl_init();
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-      curl_setopt($ch, CURLOPT_URL, $github);
-      curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-      $current_info = curl_exec($ch);
-      $string_match = "version = ";
-      $temp = strpos($current_info, $string_match) + strlen($string_match);
-      $len = strpos($current_info, "\n", $temp) - $temp;
-      $result = substr($current_info, $temp, $len);
-      curl_close($ch);
-      if($result != $info->info['version']) {
-          $value = $info->info['version'].' - Out of date';
-          $severity = REQUIREMENT_WARNING;
-      } else {
-          $value = $info->info['version'];
-          $severity = REQUIREMENT_OK;
-      }
-      $requirements['luggage_announcements'] = array(
-        'title' => ucwords(str_replace('_', ' ', $info->name)),
-        'value' => $value,
-        'severity' => $severity,
-      );
-    }
-  }
-
-  return $requirements;
-}
+///**
+// * Implements hook_requirements()
+// */
+//function luggage_announcements_requirements($phase) {
+//  $requirements = array();
+//
+//  if($phase == 'runtime') {
+//    $info = features_get_modules('luggage_announcements');
+//    if(isset($info->info['github'])) {
+//      $github = $info->info['github'];
+//      $ch = curl_init();
+//      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//      curl_setopt($ch, CURLOPT_URL, $github);
+//      curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+//      $current_info = curl_exec($ch);
+//      $string_match = "version = ";
+//      $temp = strpos($current_info, $string_match) + strlen($string_match);
+//      $len = strpos($current_info, "\n", $temp) - $temp;
+//      $result = substr($current_info, $temp, $len);
+//      curl_close($ch);
+//      if($result != $info->info['version']) {
+//          $value = $info->info['version'].' - Out of date';
+//          $severity = REQUIREMENT_WARNING;
+//      } else {
+//          $value = $info->info['version'];
+//          $severity = REQUIREMENT_OK;
+//      }
+//      $requirements['luggage_announcements'] = array(
+//        'title' => ucwords(str_replace('_', ' ', $info->name)),
+//        'value' => $value,
+//        'severity' => $severity,
+//      );
+//    }
+//  }
+//
+//  return $requirements;
+//}
