@@ -304,7 +304,6 @@ function luggage_announcements_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_announcement_caption',
     'label' => 'Caption',
-    'required' => 1,
     'settings' => array(
       'text_processing' => 1,
       'user_register_form' => FALSE,
