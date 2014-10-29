@@ -50,6 +50,7 @@ function luggage_announcements_views_pre_render(&$view) {
         array_push($announcement->field_field_announcement_alternate_url, $temp);
       }
     }
+    drupal_add_css(drupal_get_path('module', 'luggage_announcements') . '/css/luggage_announcements.slider.css');
   }
 }
 
