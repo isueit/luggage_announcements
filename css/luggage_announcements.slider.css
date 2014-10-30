@@ -23,3 +23,7 @@
 .view-luggage-announcements .flexslider .flex-control-nav {
 	z-index:100;
 }
+
+.view-luggage-announcements .flexslider .flex-direction-nav a {
+	height: 45px;
+}
