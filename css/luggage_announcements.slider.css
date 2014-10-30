@@ -13,3 +13,13 @@
 	margin: 0em;
 	padding: 0em;
 }
+
+.view-luggage-announcements .flexslider .flex-caption {
+	margin:-3em 2em 4em 0em;
+	text-align: right;
+	color:#fff;
+}
+
+.view-luggage-announcements .flexslider .flex-control-nav {
+	z-index:100;
+}
