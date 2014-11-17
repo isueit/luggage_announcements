@@ -7,4 +7,13 @@
 	border: none;
 	border-radius: none;
 	box-shadow: none;
-	}
+}
+
+.view-luggage-announcements .flexslider .slides {
+    padding: 0;
+}
+
+.view-luggage-announcements .flexslider .slides li img {
+    width: 100%;
+    height: auto;
+}
