@@ -47,16 +47,16 @@ function luggage_announcements_strongarm() {
           'weight' => '0',
         ),
         'metatags' => array(
-          'weight' => '11',
+          'weight' => '12',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '10',
         ),
         'redirect' => array(
           'weight' => '8',
         ),
         'xmlsitemap' => array(
-          'weight' => '10',
+          'weight' => '11',
         ),
       ),
       'display' => array(),
