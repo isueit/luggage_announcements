@@ -10,7 +10,8 @@
 function luggage_announcements_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-announcement-field_announcement_alternate_url'
+  // Exported field_instance:
+  // 'node-announcement-field_announcement_alternate_url'
   $field_instances['node-announcement-field_announcement_alternate_url'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
@@ -321,6 +322,87 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-announcement-field_announcement_files'
+  $field_instances['node-announcement-field_announcement_files'] = array(
+    'bundle' => 'announcement',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 8,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_announcement_files',
+    'label' => 'File(s)',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'announcements/files',
+      'file_extensions' => 'pdf xls xlsx doc docx rtf ppt pptx',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'insert' => 0,
+        'insert_absolute' => 0,
+        'insert_class' => '',
+        'insert_default' => 'auto',
+        'insert_styles' => array(
+          'auto' => 'auto',
+          'icon_link' => 0,
+          'image' => 0,
+          'image_announcement_full' => 0,
+          'image_flexslider_full' => 0,
+          'image_flexslider_thumbnail' => 0,
+          'image_large' => 0,
+          'image_medium' => 0,
+          'image_people_full' => 0,
+          'image_people_thumb' => 0,
+          'image_sceenshot_medium_200' => 0,
+          'image_screenshot_thumbnail' => 0,
+          'image_thumbnail' => 0,
+          'link' => 0,
+        ),
+        'insert_width' => '',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-announcement-field_announcement_image'
   $field_instances['node-announcement-field_announcement_image'] = array(
     'bundle' => 'announcement',
@@ -603,6 +685,7 @@ Baseball, bat, glove, ...');
   t('Body Image(s)');
   t('Caption');
   t('Category');
+  t('File(s)');
   t('Tags');
   t('This image will be scaled to a width of 1180px, then it will be cropped from the top and bottom equally to 1180px width by 346px height. If you want to control where it will get cropped, please submit an image already resized and cropped to 1180x346.');
 
