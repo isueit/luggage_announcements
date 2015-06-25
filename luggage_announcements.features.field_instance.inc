@@ -10,7 +10,8 @@
 function luggage_announcements_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-announcement-field_announcement_alternate_url'
+  // Exported field_instance:
+  // 'node-announcement-field_announcement_alternate_url'
   $field_instances['node-announcement-field_announcement_alternate_url'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
