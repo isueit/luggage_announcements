@@ -38,15 +38,6 @@ function luggage_announcements_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete terms in announcement_type'.
-  $permissions['delete terms in announcement_type'] = array(
-    'name' => 'delete terms in announcement_type',
-    'roles' => array(
-      'taxonomy editor' => 'taxonomy editor',
-    ),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: 'edit any announcement content'.
   $permissions['edit any announcement content'] = array(
     'name' => 'edit any announcement content',
@@ -63,15 +54,6 @@ function luggage_announcements_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit terms in announcement_type'.
-  $permissions['edit terms in announcement_type'] = array(
-    'name' => 'edit terms in announcement_type',
-    'roles' => array(
-      'taxonomy editor' => 'taxonomy editor',
-    ),
-    'module' => 'taxonomy',
   );
 
   return $permissions;
