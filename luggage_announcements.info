@@ -44,7 +44,6 @@ features[field_instance][] = node-announcement-field_category
 features[field_instance][] = node-announcement-field_tags
 features[flexslider_optionset][] = announcemant_slider
 features[image][] = announcement_full
-features[menu_links][] = main-menu_announcements:announcements
 features[node][] = announcement
 features[taxonomy][] = announcement_type
 features[user_permission][] = create announcement content

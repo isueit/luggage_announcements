@@ -83,50 +83,6 @@ function luggage_announcements_views_default_views() {
   $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
 
-  /* Display: Listing */
-  $handler = $view->new_display('page', 'Listing', 'page');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Announcements';
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['field_announcement_body']['id'] = 'field_announcement_body';
-  $handler->display->display_options['fields']['field_announcement_body']['table'] = 'field_data_field_announcement_body';
-  $handler->display->display_options['fields']['field_announcement_body']['field'] = 'field_announcement_body';
-  $handler->display->display_options['fields']['field_announcement_body']['label'] = '';
-  $handler->display->display_options['fields']['field_announcement_body']['alter']['max_length'] = '250';
-  $handler->display->display_options['fields']['field_announcement_body']['alter']['more_link'] = TRUE;
-  $handler->display->display_options['fields']['field_announcement_body']['alter']['trim'] = TRUE;
-  $handler->display->display_options['fields']['field_announcement_body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_announcement_body']['type'] = 'text_plain';
-  $handler->display->display_options['fields']['field_announcement_body']['settings'] = array(
-    'trim_length' => '600',
-  );
-  /* Field: Content: Banner Image */
-  $handler->display->display_options['fields']['field_announcement_image']['id'] = 'field_announcement_image';
-  $handler->display->display_options['fields']['field_announcement_image']['table'] = 'field_data_field_announcement_image';
-  $handler->display->display_options['fields']['field_announcement_image']['field'] = 'field_announcement_image';
-  $handler->display->display_options['fields']['field_announcement_image']['label'] = '';
-  $handler->display->display_options['fields']['field_announcement_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_announcement_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_announcement_image']['settings'] = array(
-    'image_style' => 'flexslider_thumbnail',
-    'image_link' => 'content',
-  );
-  $handler->display->display_options['path'] = 'announcements';
-  $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Announcements';
-  $handler->display->display_options['menu']['weight'] = '0';
-  $handler->display->display_options['menu']['name'] = 'main-menu';
-  $handler->display->display_options['menu']['context'] = 0;
-  $handler->display->display_options['menu']['context_only_inline'] = 0;
-
   /* Display: Announcement Slider */
   $handler = $view->new_display('block', 'Announcement Slider', 'announcement_slider');
   $handler->display->display_options['defaults']['pager'] = FALSE;
