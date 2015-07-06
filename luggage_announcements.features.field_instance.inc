@@ -388,7 +388,7 @@ function luggage_announcements_field_default_field_instances() {
       'active' => 1,
       'module' => 'file',
       'settings' => array(
-        'insert' => 0,
+        'insert' => 1,
         'insert_absolute' => 0,
         'insert_class' => '',
         'insert_default' => 'auto',
