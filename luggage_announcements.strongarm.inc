@@ -118,6 +118,22 @@ function luggage_announcements_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'read_more_announcement_view_modes';
+  $strongarm->value = array(
+    'teaser' => 'teaser',
+    'search_result' => 'search_result',
+    'full' => 0,
+    'rss' => 0,
+    'search_index' => 0,
+    'diff_standard' => 0,
+    'token' => 0,
+    'revision' => 0,
+  );
+  $export['read_more_announcement_view_modes'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'scheduler_publish_enable_announcement';
   $strongarm->value = 1;
   $export['scheduler_publish_enable_announcement'] = $strongarm;

@@ -59,6 +59,7 @@ features[variable][] = node_preview_announcement
 features[variable][] = node_submitted_announcement
 features[variable][] = pathauto_node_announcement_pattern
 features[variable][] = publishcontent_announcement
+features[variable][] = read_more_announcement_view_modes
 features[variable][] = scheduler_publish_enable_announcement
 features[variable][] = scheduler_publish_past_date_announcement
 features[variable][] = scheduler_unpublish_enable_announcement
