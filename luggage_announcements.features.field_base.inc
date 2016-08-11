@@ -10,7 +10,7 @@
 function luggage_announcements_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_announcement_alternate_url'
+  // Exported field_base: 'field_announcement_alternate_url'.
   $field_bases['field_announcement_alternate_url'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -39,7 +39,7 @@ function luggage_announcements_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_announcement_body'
+  // Exported field_base: 'field_announcement_body'.
   $field_bases['field_announcement_body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -58,7 +58,7 @@ function luggage_announcements_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_announcement_body_image'
+  // Exported field_base: 'field_announcement_body_image'.
   $field_bases['field_announcement_body_image'] = array(
     'active' => 1,
     'cardinality' => 5,
@@ -80,7 +80,7 @@ function luggage_announcements_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_announcement_caption'
+  // Exported field_base: 'field_announcement_caption'.
   $field_bases['field_announcement_caption'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -101,7 +101,7 @@ function luggage_announcements_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_announcement_files'
+  // Exported field_base: 'field_announcement_files'.
   $field_bases['field_announcement_files'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -124,7 +124,7 @@ function luggage_announcements_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_announcement_image'
+  // Exported field_base: 'field_announcement_image'.
   $field_bases['field_announcement_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -146,7 +146,7 @@ function luggage_announcements_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_announcement_type'
+  // Exported field_base: 'field_announcement_type'.
   $field_bases['field_announcement_type'] = array(
     'active' => 1,
     'cardinality' => -1,
