@@ -11,7 +11,7 @@ function luggage_announcements_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'node-announcement-field_announcement_alternate_url'
+  // 'node-announcement-field_announcement_alternate_url'.
   $field_instances['node-announcement-field_announcement_alternate_url'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
@@ -89,7 +89,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_body'
+  // Exported field_instance: 'node-announcement-field_announcement_body'.
   $field_instances['node-announcement-field_announcement_body'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
@@ -181,6 +181,7 @@ function luggage_announcements_field_default_field_instances() {
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
+        'summary_display' => 'default',
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
@@ -188,7 +189,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_body_image'
+  // Exported field_instance: 'node-announcement-field_announcement_body_image'.
   $field_instances['node-announcement-field_announcement_body_image'] = array(
     'bundle' => 'announcement',
     'deleted' => 0,
@@ -235,6 +236,7 @@ function luggage_announcements_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
+      'alt_field_required' => 1,
       'default_image' => 0,
       'file_directory' => 'announcement/images',
       'file_extensions' => 'png gif jpg jpeg',
@@ -242,6 +244,7 @@ function luggage_announcements_field_default_field_instances() {
       'max_resolution' => '',
       'min_resolution' => '',
       'title_field' => 1,
+      'title_field_required' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -256,7 +259,9 @@ function luggage_announcements_field_default_field_instances() {
           'auto' => 0,
           'icon_link' => 0,
           'image' => 0,
+          'image_ag_people_profile_images' => 0,
           'image_announcement_full' => 0,
+          'image_announcement_small_full' => 0,
           'image_flexslider_full' => 0,
           'image_flexslider_thumbnail' => 0,
           'image_large' => 0,
@@ -277,7 +282,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_caption'
+  // Exported field_instance: 'node-announcement-field_announcement_caption'.
   $field_instances['node-announcement-field_announcement_caption'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
@@ -335,7 +340,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_files'
+  // Exported field_instance: 'node-announcement-field_announcement_files'.
   $field_instances['node-announcement-field_announcement_files'] = array(
     'bundle' => 'announcement',
     'deleted' => 0,
@@ -416,7 +421,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_image'
+  // Exported field_instance: 'node-announcement-field_announcement_image'.
   $field_instances['node-announcement-field_announcement_image'] = array(
     'bundle' => 'announcement',
     'deleted' => 0,
@@ -463,6 +468,7 @@ function luggage_announcements_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'alt_field' => 1,
+      'alt_field_required' => 1,
       'default_image' => 0,
       'file_directory' => 'announcement/images',
       'file_extensions' => 'png gif jpg jpeg',
@@ -470,6 +476,7 @@ function luggage_announcements_field_default_field_instances() {
       'max_resolution' => '',
       'min_resolution' => '',
       'title_field' => 1,
+      'title_field_required' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -484,7 +491,9 @@ function luggage_announcements_field_default_field_instances() {
           'auto' => 'auto',
           'icon_link' => 0,
           'image' => 0,
+          'image_ag_people_profile_images' => 0,
           'image_announcement_full' => 0,
+          'image_announcement_small_full' => 0,
           'image_flexslider_full' => 0,
           'image_flexslider_thumbnail' => 0,
           'image_large' => 0,
@@ -505,7 +514,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_announcement_type'
+  // Exported field_instance: 'node-announcement-field_announcement_type'.
   $field_instances['node-announcement-field_announcement_type'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
@@ -564,7 +573,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_category'
+  // Exported field_instance: 'node-announcement-field_category'.
   $field_instances['node-announcement-field_category'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
@@ -623,7 +632,7 @@ function luggage_announcements_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-announcement-field_tags'
+  // Exported field_instance: 'node-announcement-field_tags'.
   $field_instances['node-announcement-field_tags'] = array(
     'bundle' => 'announcement',
     'default_value' => NULL,
