@@ -14,6 +14,7 @@ dependencies[] = flexslider_views
 dependencies[] = image
 dependencies[] = link
 dependencies[] = luggage_roles
+dependencies[] = luggage_seo
 dependencies[] = menu
 dependencies[] = node
 dependencies[] = options
