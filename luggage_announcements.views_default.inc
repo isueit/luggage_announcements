@@ -117,7 +117,7 @@ function luggage_announcements_views_default_views() {
   $handler->display->display_options['fields']['field_announcement_caption']['label'] = '';
   $handler->display->display_options['fields']['field_announcement_caption']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_announcement_caption']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_announcement_caption']['alter']['path'] = '[field_announcement_alternate_url] ';
+  $handler->display->display_options['fields']['field_announcement_caption']['alter']['path'] = '[field_announcement_alternate_url]';
   $handler->display->display_options['fields']['field_announcement_caption']['element_label_colon'] = FALSE;
   /* Field: Content: Banner Image */
   $handler->display->display_options['fields']['field_announcement_image']['id'] = 'field_announcement_image';
