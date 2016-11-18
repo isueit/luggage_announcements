@@ -64,7 +64,7 @@
         margin: 0;
         width: 100%;
     }
-    .hero-header-figure figcaption.grid-12 {
+    .hero-header-figure .container-12 .grid-12 {
         width: 100%;
         margin-left: 0;
         margin-right: 0;

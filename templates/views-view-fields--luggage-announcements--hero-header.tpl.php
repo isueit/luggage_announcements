@@ -26,9 +26,9 @@
 ?>
 <figure class="hero-header-figure">
   <?php print $fields['field_announcement_image']->content; ?>
-  <div class="container-12">
-    <figcaption class="grid-12 alpha omega">
+  <figcaption class="container-12">
+    <div class="grid-12 alpha omega">
       <a href="<?php print $fields['field_announcement_alternate_url']->content; ?>"><?php print $fields['field_announcement_caption']->content; ?></a>
-    </figcaption>
-  </div>
+    </div>
+  </figcaption>
 </figure>
