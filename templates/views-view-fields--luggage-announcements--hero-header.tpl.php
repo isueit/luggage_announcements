@@ -26,9 +26,11 @@
 ?>
 <figure class="hero-header-figure">
   <?php print $fields['field_announcement_image']->content; ?>
+  <?php if (!empty($fields['field_announcement_caption']->content)): ?>
   <figcaption class="container-12">
     <div class="grid-12 alpha omega">
       <a href="<?php print $fields['field_announcement_alternate_url']->content; ?>"><?php print $fields['field_announcement_caption']->content; ?></a>
     </div>
   </figcaption>
+  <?php endif; ?>
 </figure>
